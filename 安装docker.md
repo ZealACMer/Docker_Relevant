@@ -1,10 +1,14 @@
-curl -sSL https://get.docker.com/ | sh 命令通常可以用于安装 Docker 在支持的各种 Linux 发行版上，包括 CentOS。这个命令会下载一个脚本，脚本会自动识别你的 Linux 发行版并安装相应版本的 Docker。
+`curl -sSL https://get.docker.com/ | sh` 命令通常可以用于安装 Docker 在支持的各种 Linux 发行版上，包括 CentOS。这个命令会下载一个脚本，脚本会自动识别你的 Linux 发行版并安装相应版本的 Docker。
+
 它是 Docker 提供的一个便捷脚本，可以让你不需要手动执行安装命令就能安装 Docker。脚本会执行如下操作：
-检查你的 Linux 发行版
-添加 Docker 仓库
-安装最新版本的 Docker Engine 和 containerd
-确保在运行这个命令之前，你有足够的权限（通常意味着需要 root 权限或通过 sudo 运行）。
-请注意：由于这个脚本会直接以 root 权限执行，有潜在的安全风险。因此，在执行前应该总是检视脚本的内容。在生产环境中，通常建议按照官方文档用更可控的方式手动安装 Docker，这样可以更精确地配置安装选项，提高安全性。
+- 检查你的 Linux 发行版
+- 添加 Docker 仓库
+- 安装最新版本的 Docker Engine 和 containerd
+
+确保在运行这个命令之前，你有足够的权限（通常意味着需要 `root` 权限或通过 `sudo` 运行）。
+
+**请注意**：由于这个脚本会直接以 root 权限执行，有潜在的安全风险。因此，在执行前应该总是检视脚本的内容。在生产环境中，通常建议按照官方文档用更可控的方式手动安装 Docker，这样可以更精确地配置安装选项，提高安全性。
+
 如果你使用的是较新版本的 CentOS，比如 CentOS 7 或 CentOS 8，这个命令应该能够正常工作。如果你使用的是 CentOS 6 或更旧的版本，可能需要检查 Docker 是否支持你的系统版本。对于旧版本的系统，Docker 的支持可能已经结束。
 
 在生产环境中，安全和稳定性是最重要的考虑因素。因此，按照官方文档中的步骤手动安装 Docker 是推荐的方式。以下是安装Docker Community Edition (CE) 在CentOS的推荐步骤：
